@@ -17,6 +17,10 @@ export default function HomeScreen() {
     );
   };
 
+  const handleColdRoomPress = () => {
+    router.push('/(coldroom)');
+  };
+
   return (
     <LinearGradient
       colors={['#EBF8FF', '#DBEAFE', '#BFDBFE']}
@@ -57,17 +61,17 @@ export default function HomeScreen() {
           </TouchableOpacity>
 
           <TouchableOpacity 
-            style={[styles.optionCard, styles.disabledCard]} 
-            onPress={() => handleComingSoon('Cold Room')}
+            style={styles.optionCard} 
+            onPress={handleColdRoomPress}
           >
             <LinearGradient
-              colors={['#6B7280', '#4B5563']}
+              colors={['#10B981', '#059669']}
               style={styles.cardGradient}
             >
               <Thermometer color="#FFFFFF" size={32} strokeWidth={2} />
               <Text style={styles.cardTitle}>Cold Room</Text>
               <Text style={styles.cardSubtitle}>Above freezing storage</Text>
-              <Text style={styles.cardDescription}>Coming Soon - Chilled storage calculations</Text>
+              <Text style={styles.cardDescription}>Calculate cooling loads for chilled storage (+2°C to +15°C)</Text>
             </LinearGradient>
           </TouchableOpacity>
         </View>

@@ -53,6 +53,28 @@ export const PRODUCTS = {
   "General Food Items": { 
     specificHeatAbove: 3.0, specificHeatBelow: 1.6, latentHeat: 200, 
     freezingPoint: -2.0, density: 800, storageEfficiency: 0.65 
+  },
+  
+  // Cold Room Specific Products
+  "Vegetables (Mixed)": {
+    specificHeatAbove: 3.7, specificHeatBelow: 1.9, latentHeat: 285,
+    freezingPoint: -1.0, density: 600, storageEfficiency: 0.55
+  },
+  "Fruits (Mixed)": {
+    specificHeatAbove: 3.6, specificHeatBelow: 1.9, latentHeat: 280,
+    freezingPoint: -1.2, density: 650, storageEfficiency: 0.50
+  },
+  "Beverages": {
+    specificHeatAbove: 4.0, specificHeatBelow: 2.0, latentHeat: 330,
+    freezingPoint: -2.0, density: 1000, storageEfficiency: 0.80
+  },
+  "Dairy Products": {
+    specificHeatAbove: 3.4, specificHeatBelow: 1.8, latentHeat: 250,
+    freezingPoint: -1.5, density: 1020, storageEfficiency: 0.75
+  },
+  "Pharmaceutical": {
+    specificHeatAbove: 3.2, specificHeatBelow: 1.7, latentHeat: 200,
+    freezingPoint: -2.0, density: 800, storageEfficiency: 0.70
   }
 };
 

@@ -36,5 +36,16 @@ export const THERMAL_DATA = {
     coldRoom: 0.3
   },
   
-  safetyFactor: 1.1 // 10% safety margin
+  safetyFactor: 1.1, // 10% safety margin
+  
+  // Cold room specific constants
+  coldRoom: {
+    defaultInternalTemp: 4,     // °C
+    defaultExternalTemp: 35,    // °C
+    defaultPullDownTime: 6,     // hours
+    temperatureRange: {
+      min: -5,                  // °C
+      max: 15                   // °C
+    }
+  }
 };
